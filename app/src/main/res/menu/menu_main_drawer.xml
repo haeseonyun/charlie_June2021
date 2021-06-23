@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mainScreenFragment"
+            android:icon="@drawable/ic_mainscreen"
+            android:title="@string/title_nav_menu_main_screen" />
+        <item
+            android:id="@+id/goalOverviewFragment"
+            android:icon="@drawable/ic_goal"
+            android:title="@string/title_nav_menu_goal" />
+        <item
+            android:id="@+id/placeOverviewFragment"
+            android:icon="@drawable/ic_house"
+            android:title="@string/title_nav_menu_place" />
+        <item
+            android:id="@+id/sessionOverviewFragment"
+            android:icon="@drawable/ic_overview"
+            android:title="@string/title_nav_menu_history" />
+        <item
+            android:id="@+id/recommendationFragment"
+            android:icon="@drawable/ic_recommendation"
+            android:title="@string/title_nav_menu_recommendation" />
+
+        <item
+            android:id="@+id/sensorReadOutFragment"
+            android:icon="@drawable/ic_recommendation"
+            android:visible="false"
+            android:title="Sensor Readout" />
+    </group>
+
+    <item android:checkableBehavior="single"
+        android:title="@string/btn_settings">
+        <menu>
+            <item
+                android:id="@+id/settingsOverviewFragment"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/title_nav_menu_settings" />
+
+            <item
+                android:id="@+id/helpOverview"
+                android:icon="@drawable/ic_info"
+                android:title="@string/title_nav_menu_help" />
+
+            <item
+                android:id="@+id/tutorialActivity"
+                android:icon="@drawable/ic_help_outline_black_24dp"
+                android:title="@string/title_nav_menu_tutorial" />
+        </menu>
+    </item>
+    <item android:checkableBehavior="single"
+        android:title="@string/btn_survey">
+        <menu>
+            <item
+            android:id="@+id/survey"
+            android:icon="@drawable/ic_recommendation"
+            android:title="@string/titel_nav_menu_questions"  />
+        </menu>
+    </item>
+</menu>

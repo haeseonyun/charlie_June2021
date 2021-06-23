@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph_tutorial"
+    app:startDestination="@+id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/greetings1Fragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.start.tutorial.Greetings1Fragment"
+        android:label="Greetings1Fragment">
+        <action
+            android:id="@+id/action_greetings1Fragment_to_greetings2Fragment"
+            app:destination="@id/greetings2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/greetings2Fragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.start.tutorial.Greetings2Fragment"
+        android:label="Greetings2Fragment">
+        <action
+            android:id="@+id/action_greetings2Fragment_to_greetings3Fragment"
+            app:destination="@id/greetings3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/greetings3Fragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.start.tutorial.Greetings3Fragment"
+        android:label="Greetings3Fragment">
+        <action
+            android:id="@+id/action_greetings3Fragment_to_greetings6Fragment"
+            app:destination="@id/greetings6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/greetings6Fragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.start.tutorial.Greetings6Fragment"
+        android:label="fragment_greetings6"
+        tools:layout="@layout/fragment_greetings6">
+        <action
+            android:id="@+id/action_greetings6Fragment_to_greetings7Fragment"
+            app:destination="@id/greetings7Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/greetings7Fragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.start.tutorial.Greetings7Fragment"
+        android:label="fragment_greetings7"
+        tools:layout="@layout/fragment_greetings7">
+        <action
+            android:id="@+id/action_greetings7Fragment_to_greetings8Fragment"
+            app:destination="@id/greetings8Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/greetings8Fragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.start.tutorial.Greetings8Fragment"
+        android:label="fragment_greetings8"
+        tools:layout="@layout/fragment_greetings8" />
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.start.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" />
+    <action
+        android:id="@+id/action_global_greetings1Fragment"
+        app:destination="@id/dataSecureFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/navgraph_tutorial"
+        app:popUpToInclusive="true" />
+    <include app:graph="@navigation/navgraph_survey" />
+    <fragment
+        android:id="@+id/dataSecureFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.datasecure.DataSecureFragment"
+        android:label="fragment_datasecure"
+        tools:layout="@layout/fragment_datasecure" >
+        <action
+            android:id="@+id/action_dataSecureFragment_to_greetings1Fragment"
+            app:destination="@id/greetings1Fragment" />
+    </fragment>
+</navigation>

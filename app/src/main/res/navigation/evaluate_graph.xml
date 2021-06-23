@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/evaluate_graph"
+    app:startDestination="@id/evaluateGoalAchieved">
+
+    <fragment
+        android:id="@+id/evaluateGoalAchieved"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.learning.evaluation.EvaluateGoalAchieved"
+        android:label="@string/pagetitle_evaluation"
+        tools:layout="@layout/fragment_evaluate_goal_achieved">
+        <action
+            android:id="@+id/action_evaluateGoalAchieved_to_evaluateSuccessFactor"
+            app:destination="@id/evaluateSuccessFactor" />
+    </fragment>
+    <fragment
+        android:id="@+id/evaluatePlaceFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.learning.evaluation.EvaluatePlaceFragment"
+        android:label="@string/pagetitle_evaluation"
+        tools:layout="@layout/fragment_evaluate_place">
+        <!--<action-->
+            <!--android:id="@+id/action_evaluatePlaceAchieved_to_mainScreenFragment"-->
+            <!--app:destination="@id/evaluateGoalAchieved"-->
+            <!--app:enterAnim="@anim/fade_in"-->
+            <!--app:exitAnim="@anim/slide_left"-->
+            <!--app:popEnterAnim="@anim/fade_in"-->
+            <!--app:popExitAnim="@anim/slide_right"-->
+            <!--/>-->
+        <action
+            android:id="@+id/action_evaluatePlaceFragment_to_navgraph_survey_evaluate"
+            app:destination="@id/navgraph_survey_evaluate" />
+    </fragment>
+    <fragment
+        android:id="@+id/evaluateSuccessFactor"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.learning.evaluation.EvaluateSuccessFactor"
+        android:label="@string/pagetitle_evaluation"
+        tools:layout="@layout/fragment_evaluate_success_factor">
+        <action
+            android:id="@+id/action_evaluateSuccessFactor_to_evaluatePlaceFragment"
+            app:destination="@id/evaluatePlaceFragment" />
+    </fragment>
+    <include app:graph="@navigation/navgraph_survey_evaluate" />
+</navigation>

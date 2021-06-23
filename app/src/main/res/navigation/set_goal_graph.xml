@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/goalDecidePathFragment">
+
+    <fragment
+        android:id="@+id/goalWithHelpInfoFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.goals.setgoal.withhelp.GoalWithHelpInfoFragment"
+        android:label="@string/pagetitle_goal_add"
+        tools:layout="@layout/fragment_goal_with_help_info">
+        <action
+            android:id="@+id/action_goalWithHelpInfoFragment_to_goalWithHelpStepActionFragment"
+            app:destination="@id/goalWithHelpStepActionFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/slide_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalWithHelpStepActionFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.goals.setgoal.withhelp.GoalWithHelpStepActionFragment"
+        android:label="@string/pagetitle_goal_add"
+        tools:layout="@layout/fragment_goal_with_help_step_action">
+        <action
+            android:id="@+id/action_goalWithHelpStepActionFragment_to_goalWithHelpStepFieldFragment"
+            app:destination="@id/goalWithHelpStepFieldFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/slide_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalWithHelpStepFieldFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.goals.setgoal.withhelp.GoalWithHelpStepFieldFragment"
+        android:label="@string/pagetitle_goal_add"
+        tools:layout="@layout/fragment_goal_with_help_step_field">
+        <action
+            android:id="@+id/action_goalWithHelpStepFieldFragment_to_goalWithHelpStepObjectFragment"
+            app:destination="@id/goalWithHelpStepObjectFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/slide_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalDecidePathFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.goals.setgoal.GoalDecidePathFragment"
+        android:label="@string/pagetitle_goal_add"
+        tools:layout="@layout/fragment_goal_decide_path">
+        <action
+            android:id="@+id/action_goalDecidePathFragment_to_goalWithHelpInfoFragment"
+            app:destination="@id/goalWithHelpInfoFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/slide_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_right" />
+        <action
+            android:id="@+id/action_goalDecidePathFragment_to_goalNoHelpInfoFragment"
+            app:destination="@id/goalNoHelpInfoFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/slide_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalNoHelpInfoFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.goals.setgoal.nohelp.GoalNoHelpInfoFragment"
+        android:label="@string/pagetitle_goal_add"
+        tools:layout="@layout/fragment_goal_no_help_info">
+        <action
+            android:id="@+id/action_goalNoHelpInfoFragment_to_goalNoHelpUserInputFragment"
+            app:destination="@id/goalNoHelpUserInputFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/slide_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalNoHelpUserInputFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.goals.setgoal.nohelp.GoalNoHelpUserInputFragment"
+        android:label="@string/pagetitle_goal_add"
+        tools:layout="@layout/fragment_goal_no_help_user_input">
+        <action
+            android:id="@+id/action_goalNoHelpUserInputFragment_to_goalSummaryFragment"
+            app:destination="@id/goalSummaryFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/slide_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_right" />
+        <argument
+            android:name="ID"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalWithHelpStepObjectFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.goals.setgoal.withhelp.GoalWithHelpStepObjectFragment"
+        android:label="@string/pagetitle_goal_add">
+        <action
+            android:id="@+id/action_goalWithHelpStepObjectFragment_to_goalWithHelpStepAmountFragment"
+            app:destination="@id/goalWithHelpStepAmountFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/slide_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalWithHelpStepAmountFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.goals.setgoal.withhelp.GoalWithHelpStepAmountFragment"
+        android:label="@string/pagetitle_goal_add">
+        <action
+            android:id="@+id/action_goalWithHelpStepAmountFragment_to_goalWithHelpStepDurationFragment"
+            app:destination="@id/goalWithHelpStepDurationFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/slide_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalWithHelpStepDurationFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.goals.setgoal.withhelp.GoalWithHelpStepDurationFragment"
+        android:label="@string/pagetitle_goal_add">
+        <action
+            android:id="@+id/action_goalWithHelpStepDurationFragment_to_goalSummaryFragment"
+            app:destination="@id/goalSummaryFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/slide_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalSummaryFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.goals.setgoal.GoalSummaryFragment"
+        android:label="@string/pagetitle_goal_add"
+        tools:layout="@layout/fragment_goal_summary"/>
+</navigation>

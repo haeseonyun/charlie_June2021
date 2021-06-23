@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="48dp"
+    android:layout_marginBottom="48dp"
+    tools:context=".userinterface.fragment.start.tutorial.Greetings2Fragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/tutorial_greetings2_title"
+        android:textSize="34sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/imgBuddy1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/yellow_charlie_grinning"
+        android:layout_margin="12dp"
+        app:layout_constraintEnd_toStartOf="@id/imgBuddy2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+
+    <ImageView
+        android:id="@+id/imgBuddy2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/blue_smile"
+        android:layout_margin="12dp"
+        app:layout_constraintEnd_toStartOf="@id/imgBuddy3"
+        app:layout_constraintStart_toEndOf="@id/imgBuddy1"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+
+    <ImageView
+        android:id="@+id/imgBuddy3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/green_thinking_glasses"
+        android:layout_margin="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgBuddy2"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <ImageView
+        android:id="@+id/imgBuddy4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pink_charlie_relieved"
+        android:layout_margin="12dp"
+        app:layout_constraintEnd_toStartOf="@id/imgBuddy5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBuddy1"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+
+    <ImageView
+        android:id="@+id/imgBuddy5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/orange_charlie_goofy"
+        android:layout_margin="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgBuddy4"
+        app:layout_constraintTop_toBottomOf="@+id/imgBuddy1" />
+
+    <TextView
+        android:id="@+id/tvTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/tutorial_greetings2_title2"
+        android:textSize="23sp"
+        android:textColor="@color/purple"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgBuddy4"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvTitle3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:text="@string/tutorial_greetings2_title3"-->
+        <!--android:textSize="23sp"-->
+        <!--android:textColor="@color/black"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/tvTitle2"-->
+        <!--android:paddingStart="8dp"-->
+        <!--android:paddingEnd="8dp"-->
+        <!--android:layout_marginTop="30dp"/>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

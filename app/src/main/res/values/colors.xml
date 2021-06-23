@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimaryDark">#2196f3</color>
+    <color name="colorAccent">#e040fb</color>
+
+    <color name="colorBackgroundGrey">#cfcfcf</color>
+    <color name="colorMainActivityButtons">#cef991</color>
+
+    <color name="colorMainActivityButtonOverview">#ffc35c</color>
+    <color name="colorMainActivityButtonSetGoal">#b4f56d</color>
+    <color name="colorMainActivityButtonSettings">#9cc8fa</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="lightgreen">#64dd17</color>
+    <color name="green">#558b2f</color>
+    <color name="orange">#f57f17</color>
+    <color name="lightred">#d32f2f</color>
+
+    <color name="textcolor_black">#000000</color>
+    <color name="textcolor_white">#FFFFFF</color>
+
+    <color name="purple">#9c27b0</color>
+    <color name="red">#ca0205</color>
+
+    <color name="light_grey">#bdbdbd</color>
+    <color name="grey">#757575</color>
+    <color name="grey_196">#C4C4C4</color>
+    <color name="grey_216">#D8D8D8</color>
+    <color name="grey_128">#808080</color>
+
+    <color name="btn_quit_green">#1c8b73</color>
+    <color name="btn_start_red">#f1ff63b9</color>
+
+    <color name="seekbar_choosen_point_green">#4cd94c</color>
+    <color name="seekbar_choosen_point_orange">#d1bd40</color>
+
+    <color name="yellow">#ffc35c</color>
+</resources>

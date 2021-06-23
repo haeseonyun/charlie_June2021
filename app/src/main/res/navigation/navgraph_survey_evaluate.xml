@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph_survey_evaluate"
+    app:startDestination="@id/survey1EvaluateFragment">
+    <fragment
+        android:id="@+id/survey1EvaluateFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.survey.Survey1EvaluateFragment"
+        android:label="fragment_survey_evaluate1"
+        tools:layout="@layout/fragment_survey_evaluate1" >
+        <action
+            android:id="@+id/action_survey1EvaluateFragment_to_survey2EvaluateFragment"
+            app:destination="@id/survey2EvaluateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/survey2EvaluateFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.survey.Survey2EvaluateFragment"
+        android:label="fragment_survey_evaluate2"
+        tools:layout="@layout/fragment_survey_evaluate2" >
+        <action
+            android:id="@+id/action_survey2EvaluateFragment_to_survey3EvaluateFragment"
+            app:destination="@id/survey3EvaluateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/survey3EvaluateFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.survey.Survey3EvaluateFragment"
+        android:label="fragment_survey_evaluate3"
+        tools:layout="@layout/fragment_survey_evaluate3" />
+</navigation>

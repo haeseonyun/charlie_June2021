@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/survey_graph"
+    app:startDestination="@id/welcomeSurveyFragment">
+    <fragment
+        android:id="@+id/welcomeSurveyFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.survey.WelcomeSurveyFragment"
+        android:label="fragment_survey_welcome"
+        tools:layout="@layout/fragment_survey_welcome" >
+        <action
+            android:id="@+id/action_welcomeSurveyFragment_to_survey1Fragment4"
+            app:destination="@id/survey1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/survey1Fragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.survey.Survey1Fragment"
+        android:label="fragment_survey_question1"
+        tools:layout="@layout/fragment_survey_question1" >
+        <action
+            android:id="@+id/action_survey1Fragment_to_survey2Fragment"
+            app:destination="@id/survey2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/survey2Fragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.survey.Survey2Fragment"
+        android:label="fragment_survey_question2"
+        tools:layout="@layout/fragment_survey_question2" >
+        <action
+            android:id="@+id/action_survey2Fragment_to_survey3Fragment"
+            app:destination="@id/survey3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/survey3Fragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.survey.Survey3Fragment"
+        android:label="fragment_survey_question3"
+        tools:layout="@layout/fragment_survey_question3" />
+</navigation>

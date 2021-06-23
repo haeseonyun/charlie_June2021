@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userinterface.fragment.SensorReadOutFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACCELEROMETER_X"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/accelerometerX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VALUE"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACCELEROMETER_Y"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/accelerometerY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VALUE"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACCELEROMETER_Z"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/accelerometerZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VALUE"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LINEAR_ACCELERATION_X"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/linearAccelX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VALUE"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LINEAR_ACCELERATION_Y"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/linearAccelY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VALUE"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LINEAR_ACCELERATION_Z"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/linearAccelZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VALUE"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GYROSCOPE_X"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/gyroscopeX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VALUE"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GYROSCOPE_Y"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/gyroscopeY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VALUE"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GYROSCOPE_Z"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/gyroscopeZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VALUE"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIGHT"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VALUE"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/directionLeft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LEFT"
+            android:textAlignment="center"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/directionRight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RIGHT"
+            android:textAlignment="center"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/directionBackward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BACKWARD"
+            android:textAlignment="center"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/directionForward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FORWARD"
+            android:textAlignment="center"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/directionDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOWN"
+            android:textAlignment="center"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/directionUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UP"
+            android:textAlignment="center"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="16dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="FaceLeft"
+            android:textAlignment="center"
+            android:layout_weight="0.2"/>
+
+        <SeekBar
+            android:id="@+id/axisXSeekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:max="100"
+            android:clickable="false"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="FaceRight"
+            android:textAlignment="center"
+            android:layout_weight="0.2"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="4dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="StandDown"
+            android:textAlignment="center"
+            android:layout_weight="0.2"/>
+
+        <SeekBar
+            android:id="@+id/axisYSeekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:max="100"
+            android:clickable="false"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="StandUp"
+            android:textAlignment="center"
+            android:layout_weight="0.2"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="4dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="FaceDown"
+            android:textAlignment="center"
+            android:layout_weight="0.2"
+            android:max="100"/>
+
+        <SeekBar
+            android:id="@+id/axisZSeekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:clickable="false" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="FaceUp"
+            android:textAlignment="center"
+            android:layout_weight="0.2"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="0.9"
+        android:layout_marginTop="16dp">
+
+
+        <TextView
+            android:id="@+id/textViewPickup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="PickUp"
+            android:textAlignment="center"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:id="@+id/textViewMoved"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Moved"
+            android:textAlignment="center"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:id="@+id/textViewIdle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Idle"
+            android:textAlignment="center"
+            android:layout_weight="0.3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="0.9">
+
+
+        <TextView
+            android:id="@+id/textViewUpsideDown"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="UpsideDown"
+            android:textAlignment="center"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:id="@+id/textViewLandscape"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Landscape"
+            android:textAlignment="center"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:layout_weight="0.3"/>
+
+    </LinearLayout>
+
+</LinearLayout>

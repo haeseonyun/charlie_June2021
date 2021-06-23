@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph_main"
+    app:startDestination="@id/mainScreenFragment">
+
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.mainscreen.MainScreenFragment"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_mainScreenFragment_to_evaluate_graph"
+            app:destination="@id/evaluate_graph"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeOverviewFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.places.overview.PlaceOverviewFragment"
+        android:label="@string/title_nav_menu_place"
+        tools:layout="@layout/fragment_place_overview" >
+        <action
+            android:id="@+id/action_placeOverviewFragment_to_myPlaceFragment"
+            app:destination="@id/myPlaceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalOverviewFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.goals.overview.GoalOverviewFragment"
+        android:label="@string/title_nav_menu_goal"
+        tools:layout="@layout/fragment_goal_overview">
+        <action
+            android:id="@+id/action_goalOverviewFragment_to_nav_graph"
+            app:destination="@id/nav_graph"
+            app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_goalOverviewFragment_to_goalEditFragment"
+            app:destination="@id/goalEditFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/sessionOverviewFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.learning.session.SessionOverviewFragment"
+        android:label="@string/title_nav_menu_history"
+        tools:layout="@layout/fragment_session_overview" >
+        <action
+            android:id="@+id/action_sessionOverviewFragment_to_sessionFragment"
+            app:destination="@id/sessionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recommendationFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.recommendation.RecommendationFragment"
+        android:label="@string/title_nav_menu_recommendation"
+        tools:layout="@layout/fragment_recommendation" />
+    <fragment
+        android:id="@+id/settingsOverviewFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.settings.SettingsOverviewFragment"
+        android:label="@string/title_nav_menu_settings"
+        tools:layout="@layout/fragment_settings_overview" />
+    <fragment
+        android:id="@+id/helpOverview"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.help.HelpOverview"
+        android:label="@string/title_nav_menu_help"
+        tools:layout="@layout/fragment_help" />
+    <action
+        android:id="@+id/action_global_goalOverviewFragment"
+        app:destination="@id/goalOverviewFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/mainScreenFragment" />
+    <action
+        android:id="@+id/action_global_placeOverviewFragment"
+        app:destination="@id/placeOverviewFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/mainScreenFragment" />
+    <action
+        android:id="@+id/action_global_helpOverview"
+        app:destination="@id/helpOverview"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/mainScreenFragment" />
+    <action
+        android:id="@+id/action_global_recommendationFragment"
+        app:destination="@id/recommendationFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/mainScreenFragment" />
+    <action
+        android:id="@+id/action_global_settingsOverviewFragment"
+        app:destination="@id/settingsOverviewFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/mainScreenFragment" />
+    <action
+        android:id="@+id/action_global_sessionOverviewFragment"
+        app:destination="@id/sessionOverviewFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/mainScreenFragment" />
+    <action
+        android:id="@+id/action_global_mainScreenFragment"
+        app:destination="@id/mainScreenFragment"
+        app:popUpTo="@id/navgraph_main"
+        app:popUpToInclusive="true"
+        app:launchSingleTop="true" />
+    <include app:graph="@navigation/set_goal_graph" />
+    <fragment
+        android:id="@+id/goalEditFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.goals.setgoal.nohelp.GoalNoHelpUserInputFragment"
+        android:label="@string/pagetitle_goal_edit"
+        tools:layout="@layout/fragment_goal_no_help_user_input">
+        <argument
+            android:name="ID"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/myPlaceFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.places.details.MyPlaceFragment"
+        android:label="@string/pagetitle_place_edit"
+        tools:layout="@layout/fragment_my_place">
+        <argument
+            android:name="ID"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/sessionFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.learning.session.SessionFragment"
+        android:label="@string/pagetitle_history_detail"
+        tools:layout="@layout/fragment_session">
+        <argument
+            android:name="ID"
+            app:argType="long" />
+    </fragment>
+    <include app:graph="@navigation/evaluate_graph" />
+    <activity
+        android:id="@+id/tutorialActivity"
+        android:name="de.htwberlin.learningcompanion.userinterface.activity.TutorialActivity"
+        android:label="activity_tutorial"
+        tools:layout="@layout/activity_tutorial" >
+        <argument
+            android:name="showTutorial"
+            app:argType="boolean"
+            android:defaultValue="true" />
+    </activity>
+    <action
+        android:id="@+id/action_global_tutorialActivity"
+        app:destination="@id/tutorialActivity"
+        app:popUpTo="@id/mainScreenFragment"
+        app:launchSingleTop="true" >
+        <argument android:defaultValue="true"
+            android:name="showTutorial" />
+    </action>
+    <fragment
+        android:id="@+id/sensorReadOutFragment"
+        android:name="de.htwberlin.learningcompanion.userinterface.fragment.SensorReadOutFragment"
+        android:label="Sensor Readout"
+        tools:layout="@layout/fragment_sensor_read_out" />
+    <action
+        android:id="@+id/action_global_sensorReadOutFragment"
+        app:destination="@id/sensorReadOutFragment"
+        app:popUpTo="@id/mainScreenFragment"
+        app:launchSingleTop="true" />
+</navigation>

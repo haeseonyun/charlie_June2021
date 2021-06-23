@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">Learning Companion</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Main Overview</string>
+    <string name="title_activity_get_location">Get Location</string>
+
+    <string name="btn_overview">Overview</string>
+    <string name="btn_setGoal">Set Goal</string>
+    <string name="btn_settings">Settings</string>
+    <string name="btn_survey">Survey</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Learning Companion</string>
+    <string name="nav_header_subtitle_en">I\'m Charlie. Click me!</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_set_goal">Set a new goal</string>
+    <string name="error_field_required">Field is required!</string>
+
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+    <string name="next">Next</string>
+    <string name="prev">Previous</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+
+    <string name="select_time">Select Time</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="goal_with_help_info_title">You choose to set a goal with help...</string>
+    <string name="goal_with_help_info_message">So let\'s do this together!</string>
+    <string name="goal_with_help_info_message2">Tap anywhere to continue...</string>
+    <string name="goal_with_help_action_info2">, what action are you going to perform?</string>
+    <string name="goal_with_help_action_info1">, what are you going to do?</string>
+    <string name="goal_with_help_field_info1">, what discipline or field of learning are you dealing with?</string>
+    <string name="goal_with_help_object_info1">, with which medium or materials are you learning?</string>
+    <string name="goal_with_help_amount_info1">, how much do you want to learn?</string>
+    <string name="goal_with_help_duration_info1">, how long do you want to learn?</string>
+    <string name="goal_decide_path_title">, do you know how to set a goal?</string>
+    <string name="goal_no_help_info_message">Your goal should be specific. measurable, attainable, realistic and timebound...</string>
+    <string name="goal_no_help_info_title">Great!</string>
+    <string name="goal_summury_title">Your Goal is...</string>
+    <string name="goal_summury_correct">Correct?</string>
+
+    <string name="goal_current_title">My current goal is ...</string>
+
+    <string name="title_nav_menu_main_screen">Ready to Learn</string>
+    <string name="title_nav_menu_place">My Places</string>
+    <string name="title_nav_menu_goal">My Goals</string>
+    <string name="title_nav_menu_history">My learning History</string>
+    <string name="title_nav_menu_alert">Alert</string>
+    <string name="title_nav_menu_recommendation">Recommendation</string>
+    <string name="title_nav_menu_settings">My learning companion</string>
+    <string name="title_nav_menu_help">Help</string>
+    <string name="title_nav_menu_tutorial">Tutorial</string>
+    <string name="titel_nav_menu_questions">Questions</string>
+
+    <string name="pagetitle_main_screen">Ready to Learn</string>
+    <string name="pagetitle_place">My Places</string>
+    <string name="pagetitle_place_add">Add Places</string>
+    <string name="pagetitle_place_edit">Edit Place</string>
+    <string name="pagetitle_goal">My Goals</string>
+    <string name="pagetitle_goal_add">New Learning Goal</string>
+    <string name="pagetitle_goal_edit">Edit Learning Goal</string>
+    <string name="pagetitle_history">My learning History</string>
+    <string name="pagetitle_history_detail">Detailed Learning History</string>
+    <string name="pagetitle_alert">Alert</string>
+    <string name="pagetitle_recommendation">Recommendation</string>
+    <string name="pagetitle_settings">My learning companion</string>
+    <string name="pagetitle_help">Help</string>
+    <string name="pagetitle_tutorial">Tutorial</string>
+    <string name="pagetitle_evaluation">Evaluation</string>
+
+    <string name="settings_user_name">User Name :</string>
+    <string name="settings_buddy_name">Buddy Name :</string>
+    <string name="settings_buddy_image">Buddy Image :</string>
+    <string name="settings_gps">GPS :</string>
+    <string name="settings_microphone">Microphone :</string>
+    <string name="settings_camera">Camera :</string>
+
+    <string name="settings_permissions_header">GPS, Camera and Microphone Services</string>
+    <string name="settings_permissions_info">*NOTE: You can enable/disable the Settings at the <b>SETTINGS MENU</b></string>
+
+    <string name="settings_intervation_frequency">Intervention Frequency</string>
+    <string name="settings_intervation_frequency_notice"> will alert you at least at start and at the end.</string>
+    <string name="settings_interval">Interval</string>
+    <string name="settings_interval_remark"> will alert you every</string>
+    <string name="settings_frequency">Frequency</string>
+    <string name="settings_frequency_remark"> will alert you</string>
+    <string name="settings_interval_times">times</string>
+
+    <string name="place_use_camera_note">You can set a background picture for this place by using your camera or gallery. Tap on the area above!</string>
+    <string name="place_noise_rating_silent">silent</string>
+    <string name="place_noise_rating_quiet">quiet</string>
+    <string name="place_noise_rating_loud">loud</string>
+    <string name="place_noise_rating_noisy">noisy</string>
+    <string name="place_brightness_rating_dark">dark</string>
+    <string name="place_brightness_rating_dim">dim</string>
+    <string name="place_brightness_rating_bright">bright</string>
+    <string name="place_brightness_rating_shiny">shiny</string>
+    <string name="exit_prohibited_message">Let us keep concentrating on achieving your goal. You can look around when you are done or have quit.</string>
+    <string name="place_tab_to_add_image">Add Picture</string>
+
+    <string name="goaleval_suredialog_title">Proceed?</string>
+    <string name="goaleval_suredialog_msg">You evaluated your goal as %d percent. \n\nIs this correct?</string>
+
+    <string name="goaleval_place_brighttext_enable">, how was the overall brightness level?</string>
+    <string name="goaleval_place_brighttext_disable">The average brightness level of the place was: </string>
+    <string name="goaleval_place_noisetext_enable">, how was the noise level?</string>
+    <string name="goaleval_place_noisetext_disable">The average noise level of the place was:</string>
+
+    <string name="evaluation_question_successfactor">, how would you do differently next time or what was the success factor?</string>
+
+    <string name="history_goalachievment_text">Percentage of your goal achievement</string>
+
+    <string name="tutorial_greetings1_title">Hello! I am …</string>
+    <string name="tutorial_greetings1_title2">Hmm … I don\'t know.</string>
+    <string name="tutorial_greetings1_title3">Can you give me a name?</string>
+    <string name="tutorial_greetings1_error">Please give me a name.</string>
+
+
+    <string name="tutorial_greetings2_title">What type of %s am I?</string>
+    <string name="tutorial_greetings2_title2">I am <b>%s</b> %s!</string>
+    <string name="tutorial_greetings2_title3">Can you give me a name?</string>
+    <string name="tutorial_greetings2_error">Please give me a name.</string>
+
+    <string name="tutorial_greetings3_title">Nice to meet you!</string>
+    <string name="tutorial_greetings3_title2">My name is </string>
+    <string name="tutorial_greetings3_title3">What is your name?</string>
+    <string name="tutorial_greetings3_error">Please tell me your name.</string>
+
+    <string name="tutorial_greetings6_title">Nice to meet you %s!</string>
+    <string name="tutorial_greetings6_text">I <b>help</b> you <b>achieve</b> your task by:</string>
+    <string name="tutorial_greetings6_text2">setting your <b>goal</b></string>
+    <string name="tutorial_greetings6_text3">setting your <b>place</b></string>
+    <string name="tutorial_greetings6_text4">showing <b>overviews</b> of your goals and places</string>
+    <string name="tutorial_greetings6_text5">giving <b>recommendations</b></string>
+
+    <string name="tutorial_greetings7_title">How can I …?</string>
+    <string name="tutorial_greetings7_text1">From the <b>menu</b>, which slides in from the left, you can access all app features.</string>
+
+    <string name="tutorial_greetings8_title">, if you need help…</string>
+    <string name="tutorial_greetings8_text1">I will always be there so just tap me!</string>
+    <string name="tutorial_greetings8_text2">Are you ready to learn,    </string>
+
+
+    <string name="tutorial_skipdialog_title">Skip Tutorial?</string>
+    <string name="tutorial_skipdialog_text">Do your really want to skip the tutorial and start right away?</string>
+
+    <string name="tutorial_default_buddyname">Charly</string>
+    <string name="tutorial_default_username">Buddy</string>
+
+    <string name="mainscreen_start">Start</string>
+    <string name="mainscreen_gotogoal">Go to Goals</string>
+    <string name="mainscreen_gotoplace">Go to Places</string>
+
+
+</resources>
