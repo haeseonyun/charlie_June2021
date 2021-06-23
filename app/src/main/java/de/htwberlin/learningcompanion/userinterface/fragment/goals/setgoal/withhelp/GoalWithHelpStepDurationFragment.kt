@@ -26,7 +26,7 @@ import java.util.*
 
 
 class GoalWithHelpStepDurationFragment : AbsGoalSettingFragment() {
-    val addUrl : String = "http://192.168.0.27/companion/addGoalnohelp.php"
+    val addUrl : String = "http://192.168.178.32/charlie/addGoalnohelp.php"
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -151,11 +151,17 @@ class GoalWithHelpStepDurationFragment : AbsGoalSettingFragment() {
     fun addData() {
         val getID = Settings.Secure.getString(context?.getContentResolver(), Settings.Secure.ANDROID_ID)
         val getTime = Calendar.getInstance().time.toString()
-        val getAction = et_action.text.toString()
+/*        val getAction = et_action.text.toString()
         val getField = et_field.text.toString()
         val getAmount= et_amount.text.toString()
         val getMedium = et_medium.text.toString()
         val getDuration = et_for_amount.text.toString()
+*/
+        val getAction = goalViewModel.editGoalHolder?.action.toString()
+        val getField = goalViewModel.editGoalHolder?.field.toString()
+        val getAmount= goalViewModel.editGoalHolder?.amount.toString()
+        val getMedium = goalViewModel.editGoalHolder?.medium.toString()
+        val getDuration = goalViewModel.editGoalHolder?.durationInMin.toString()
 
         val postRequest: StringRequest = object : StringRequest(Method.POST, addUrl,
                 Response.Listener { response -> // response

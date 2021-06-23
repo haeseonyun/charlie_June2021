@@ -42,7 +42,7 @@ import kotlin.math.absoluteValue
 class EvaluatePlaceFragment : Fragment() {
     /*DATABASE*/
     //val addUrl : String = "http://192.168.178.20/companion/addRunGoal.php"
-    val addUrl : String = "http://companion.bplaced.net/addRunGoal.php"
+    val addUrl : String = "http://192.168.178.32/charlie/addRunGoal.php"
     //val addUrl : String = "http://companion.hu-informatik.berlin.de/addRunGoal.php"
     private val viewModelFactory = ViewModelFactory
     private lateinit var learningSessionViewModel: LearningSessionViewModel

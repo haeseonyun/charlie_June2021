@@ -21,7 +21,7 @@ import kotlin.collections.HashMap
 
 class Survey2EvaluateFragment : Fragment() {
     /*DATABASE*/
-    val addUrl : String = "http://companion.bplaced.net/addSurvey.php"
+    val addUrl : String = "http://192.168.178.32/charlie/addSurvey.php"
     //val addUrl : String = "http://companion.hu-informatik.berlin.de/addRunGoal.php"
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {

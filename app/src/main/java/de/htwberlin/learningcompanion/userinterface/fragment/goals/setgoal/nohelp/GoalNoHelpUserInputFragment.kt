@@ -31,7 +31,7 @@ import java.util.*
 
 class GoalNoHelpUserInputFragment : AbsGoalSettingFragment() {
     /*DATABASE*/
-    val addUrl : String = "http://companion.bplaced.net/addGoalnohelp.php"
+    val addUrl : String = "http://192.168.178.32/charlie/addGoalnohelp.php"
     //val addUrl : String = "http://companion.hu-informatik.berlin.de/addRunGoal.php"
     private val args: GoalNoHelpUserInputFragmentArgs by navArgs()
 
